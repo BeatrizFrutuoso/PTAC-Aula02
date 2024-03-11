@@ -1,6 +1,15 @@
 header{
     height: 100px;
-    background-color: pink;
+    background-color: #6495ED	;
+
+    border-bottom: 2px #000;
+
+}
+Footer{
+    
+    height: 200px;
+    background-color: #836FFF	;
+
     border-bottom: 2px #000;
 
 }
