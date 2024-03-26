@@ -1,7 +1,5 @@
 import { useState} from "react";
-
-export default function Main(){
-    export default funcion Main (){
+    export default function Main (){
         const[nome, setNome] = useState("");
         const[telefone, setTelefone] = useState("");
         const[listataContatos, setlisContatos] = useState
@@ -26,14 +24,19 @@ export default function Main(){
             onChange={(event)=> setNome(event.target.value)}/>
             </form>
             {nome}
+
             <label> telefone
                 <input
                 type="tel"
                 name="telefone-contato"
                 id="telefone"
                 onChange={(event)=> setTelefone(event.target.value)}
-        
+                />
+        </label>
+        {telefone}
+        <button> Enviar </button>
+        </main>
             
         )
     }
-}
+    
