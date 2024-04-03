@@ -22,7 +22,6 @@ import { useState} from "react";
             name="nome-contato"
             id="nome"
             onChange={(event)=> setNome(event.target.value)}/>
-            </form>
             {nome}
 
             <label> telefone
@@ -33,10 +32,17 @@ import { useState} from "react";
                 onChange={(event)=> setTelefone(event.target.value)}
                 />
         </label>
-        {telefone}
+        <label>Idade:
+            <input type="number"
+            name="idade-contato"
+            id="idade" value={idade}
+            onChange={ (event)=> setIdade(event.target.value)}/>
+                </label>
+        
         <button> Enviar </button>
+        </form>
         </main>
             
-        )
+        );
     }
     
